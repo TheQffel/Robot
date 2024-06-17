@@ -1,0 +1,49 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vlc="clr-namespace:LibVLCSharp.MAUI;assembly=LibVLCSharp.MAUI"
+             x:Class="Mobile.ControlPage"
+             Title="Sterowanie Robotem">
+    <StackLayout>
+        <vlc:VideoView x:Name="Camera" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" HeightRequest="360"/>
+            <StackLayout HorizontalOptions="Center">
+            <Grid ColumnSpacing="25" RowSpacing="25" Margin="10">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Label FontSize="Title" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Text="PORUSZANIE:" Margin="10" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+
+                <Button x:Name="MoveLeft" FontSize="Title" FontAttributes="Bold" WidthRequest="50" HeightRequest="50" Text="◀" Grid.Row="2" Grid.Column="1" Pressed="ButtonPressed" Released="ButtonReleased"/>
+                <Button x:Name="MoveForward" FontSize="Title" FontAttributes="Bold" WidthRequest="50" HeightRequest="50" Text="▲" Grid.Row="1" Grid.Column="2" Pressed="ButtonPressed" Released="ButtonReleased"/>
+                <Button x:Name="MoveRight" FontSize="Title" FontAttributes="Bold" WidthRequest="50" HeightRequest="50" Text="▶" Grid.Row="2" Grid.Column="3" Pressed="ButtonPressed" Released="ButtonReleased"/>
+                <Button x:Name="MoveBackward" FontSize="Title" FontAttributes="Bold" WidthRequest="50" HeightRequest="50" Text="▼" Grid.Row="3" Grid.Column="2" Pressed="ButtonPressed" Released="ButtonReleased"/>
+
+                <Label FontSize="Title" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="5" Text="UCHWYT / RAMIĘ:" Margin="10" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+
+                <Button x:Name="PickUpLeft" FontSize="Title" FontAttributes="Bold" WidthRequest="50" HeightRequest="50" Padding="-10" Text="→   " Grid.Row="5" Grid.Column="0" Pressed="ButtonPressed" Released="ButtonReleased"/>
+                <Button x:Name="PutDownLeft" FontSize="Title" FontAttributes="Bold" WidthRequest="50" HeightRequest="50" Padding="-10" Text="←   " Grid.Row="6" Grid.Column="0" Pressed="ButtonPressed" Released="ButtonReleased"/>
+
+                <Button x:Name="PickUpBoth" FontSize="Title" FontAttributes="Bold" WidthRequest="50" HeightRequest="50" Padding="-10" Text="→  ←" Grid.Row="5" Grid.Column="2" Pressed="ButtonPressed" Released="ButtonReleased"/>
+                <Button x:Name="PutDownBoth" FontSize="Title" FontAttributes="Bold" WidthRequest="50" HeightRequest="50" Padding="-10" Text=" ←→ " Grid.Row="6" Grid.Column="2" Pressed="ButtonPressed" Released="ButtonReleased"/>
+
+                <Button x:Name="PickUpRight" FontSize="Title" FontAttributes="Bold" WidthRequest="50" HeightRequest="50" Padding="-10" Text="   ←" Grid.Row="5" Grid.Column="4" Pressed="ButtonPressed" Released="ButtonReleased"/>
+                <Button x:Name="PutDownRight" FontSize="Title" FontAttributes="Bold" WidthRequest="50" HeightRequest="50" Padding="-10" Text="   →" Grid.Row="6" Grid.Column="4" Pressed="ButtonPressed" Released="ButtonReleased"/>
+
+            </Grid>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

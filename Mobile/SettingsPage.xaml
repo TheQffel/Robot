@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobile.SettingsPage"
+             Title="Ustawienia Aplikacji">
+    <StackLayout Margin="25,10,25,10" Spacing="10">
+
+        <StackLayout Orientation="Horizontal">
+            <Label FontSize="Medium" x:Name="WifiText" Text="WiFi SSID:" HorizontalOptions="StartAndExpand" Margin="0,10,0,0"/>
+            <Picker FontSize="Medium" x:Name="WifiValue" WidthRequest="250" SelectedIndexChanged="OptionChanged" SelectedItem="Robot" SelectedIndex="0"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label FontSize="Medium" x:Name="BlueText" Text="Bluetooth:" HorizontalOptions="StartAndExpand" Margin="0,10,0,0"/>
+            <Picker FontSize="Medium" x:Name="BlueValue" WidthRequest="250" SelectedIndexChanged="OptionChanged" SelectedItem="BT05" SelectedIndex="0"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label FontSize="Medium" x:Name="AddrText" Text="Cam IP:" HorizontalOptions="StartAndExpand" Margin="0,10,0,0"/>
+            <Entry FontSize="Medium" x:Name="AddrValue" WidthRequest="250" Text="192.168.1.10" HorizontalOptions="End" Keyboard="Url" TextChanged="OptionChanged"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label FontSize="Medium" x:Name="PortText" Text="Port:" HorizontalOptions="StartAndExpand" Margin="0,10,0,0"/>
+            <Entry FontSize="Medium" x:Name="PortValue" WidthRequest="250" Text="5000" HorizontalOptions="End" Keyboard="Numeric" TextChanged="OptionChanged"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label FontSize="Medium" x:Name="ProtoText" Text="Protokół:" HorizontalOptions="StartAndExpand" Margin="0,10,0,0"/>
+            <Picker FontSize="Medium" x:Name="ProtoValue" WidthRequest="250" SelectedIndexChanged="OptionChanged" SelectedItem="TCP" SelectedIndex="1">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>UDP</x:String>
+                        <x:String>TCP</x:String>
+                        <x:String>RTSP</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label FontSize="Medium" x:Name="SpeedText" Text="Prędkość:" HorizontalOptions="StartAndExpand" Margin="0,10,0,0"/>
+            <Picker FontSize="Medium" x:Name="SpeedValue" WidthRequest="250" SelectedIndexChanged="OptionChanged" SelectedItem="Normalnie" SelectedIndex="1">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Wolno</x:String>
+                        <x:String>Normalnie</x:String>
+                        <x:String>Szybko</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>
+
+

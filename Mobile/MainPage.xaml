@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobile.MainPage"
+             Title="Robot Controller">
+    <AbsoluteLayout>
+        <Image Source="logo.png" BackgroundColor="White" AbsoluteLayout.LayoutBounds="0.5, 0.2, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"></Image>
+        <Label Text="POLITECHNIKA KRAKOWSKA" FontSize="Title" AbsoluteLayout.LayoutBounds="0.5, 0.6, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"></Label>
+        <Label Text="Aplikacja do Sterowania Robotem" FontSize="Medium" AbsoluteLayout.LayoutBounds="0.5, 0.7, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"></Label>
+        <Label Text="Wybierz stronę z menu aby kontynuować." FontSize="Subtitle" AbsoluteLayout.LayoutBounds="0.5, 0.8, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional"></Label>
+    </AbsoluteLayout>
+</ContentPage>

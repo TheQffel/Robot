@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobile.ConsolePage"
+             Title="Konsola Debugowania">
+    <AbsoluteLayout Margin="10">
+        <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, AutoSize" AbsoluteLayout.LayoutFlags="WidthProportional" Spacing="10">
+            <Label FontSize="Medium" x:Name="MessageA" Text="" HorizontalOptions="StartAndExpand"/>
+            <Label FontSize="Medium" x:Name="MessageB" Text="" HorizontalOptions="StartAndExpand"/>
+            <Label FontSize="Medium" x:Name="MessageC" Text="" HorizontalOptions="StartAndExpand"/>
+            <Label FontSize="Medium" x:Name="MessageD" Text="" HorizontalOptions="StartAndExpand"/>
+            <Label FontSize="Medium" x:Name="MessageE" Text="" HorizontalOptions="StartAndExpand"/>
+            <Label FontSize="Medium" x:Name="MessageF" Text="" HorizontalOptions="StartAndExpand"/>
+            <Label FontSize="Medium" x:Name="MessageG" Text="" HorizontalOptions="StartAndExpand"/>
+            <Label FontSize="Medium" x:Name="MessageH" Text="" HorizontalOptions="StartAndExpand"/>
+            <Label FontSize="Medium" x:Name="MessageI" Text="" HorizontalOptions="StartAndExpand"/>
+            <Label FontSize="Medium" x:Name="MessageJ" Text="" HorizontalOptions="StartAndExpand"/>
+            <Label FontSize="Medium" x:Name="MessageK" Text="" HorizontalOptions="StartAndExpand"/>
+            <Label FontSize="Medium" x:Name="MessageL" Text="" HorizontalOptions="StartAndExpand"/>
+            <Label FontSize="Medium" x:Name="MessageM" Text="" HorizontalOptions="StartAndExpand"/>
+            <Label FontSize="Medium" x:Name="MessageN" Text="" HorizontalOptions="StartAndExpand"/>
+            <Label FontSize="Medium" x:Name="MessageO" Text="" HorizontalOptions="StartAndExpand"/>
+            <Label FontSize="Medium" x:Name="MessageP" Text="" HorizontalOptions="StartAndExpand"/>
+            <Label FontSize="Medium" x:Name="MessageR" Text="" HorizontalOptions="StartAndExpand"/>
+            <Label FontSize="Medium" x:Name="MessageS" Text="" HorizontalOptions="StartAndExpand"/>
+            <Label FontSize="Medium" x:Name="MessageT" Text="" HorizontalOptions="StartAndExpand"/>
+            <Label FontSize="Medium" x:Name="MessageU" Text="" HorizontalOptions="StartAndExpand"/>
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>

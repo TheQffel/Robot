@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobile.SensorsPage"
+             Title="Wskazania Czujników">
+    <AbsoluteLayout Margin="10">
+        <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, AutoSize" AbsoluteLayout.LayoutFlags="WidthProportional" Spacing="10">
+
+            <StackLayout Orientation="Horizontal">
+                <Label FontSize="Medium" x:Name="MQ2Text" Text="MQ2 - Metan, Butan, LPG, Dym:" HorizontalOptions="StartAndExpand"/>
+                <Label FontSize="Medium" x:Name="MQ2Value" Text="- %" HorizontalOptions="End"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label FontSize="Medium" x:Name="MQ3Text" Text="MQ3 - Alkohol, Etanol, Dym:" HorizontalOptions="StartAndExpand"/>
+                <Label FontSize="Medium" x:Name="MQ3Value" Text="- %" HorizontalOptions="End"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label FontSize="Medium" x:Name="MQ4Text" Text="MQ4 - Metan, Gazy CNG:" HorizontalOptions="StartAndExpand"/>
+                <Label FontSize="Medium" x:Name="MQ4Value" Text="- %" HorizontalOptions="End"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label FontSize="Medium" x:Name="MQ5Text" Text="MQ5 - LPG, Gazy Naturalne:" HorizontalOptions="StartAndExpand"/>
+                <Label FontSize="Medium" x:Name="MQ5Value" Text="- %" HorizontalOptions="End"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label FontSize="Medium" x:Name="MQ6Text" Text="MQ6 - LPG, Butan:" HorizontalOptions="StartAndExpand"/>
+                <Label FontSize="Medium" x:Name="MQ6Value" Text="- %" HorizontalOptions="End"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label FontSize="Medium" x:Name="MQ7Text" Text="MQ7 - Tlenek Węgla (CO):" HorizontalOptions="StartAndExpand"/>
+                <Label FontSize="Medium" x:Name="MQ7Value" Text="- %" HorizontalOptions="End"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label FontSize="Medium" x:Name="MQ8Text" Text="MQ8 - Wodór (H2):" HorizontalOptions="StartAndExpand"/>
+                <Label FontSize="Medium" x:Name="MQ8Value" Text="- %" HorizontalOptions="End"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label FontSize="Medium" x:Name="MQ9Text" Text="MQ9 - Gazy Łatwopalne:" HorizontalOptions="StartAndExpand"/>
+                <Label FontSize="Medium" x:Name="MQ9Value" Text="- %" HorizontalOptions="End"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label FontSize="Medium" Text=" " HorizontalOptions="StartAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="25,0,25,0">
+                <Label FontSize="Medium" x:Name="TemperatureText" Text="Temperatura:" HorizontalOptions="StartAndExpand"/>
+                <Label FontSize="Medium" x:Name="TemperatureValue" Text="- °C" HorizontalOptions="End"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="25,0,25,0">
+                <Label FontSize="Medium" x:Name="HumidityText" Text="Wilgotność:" HorizontalOptions="StartAndExpand"/>
+                <Label FontSize="Medium" x:Name="HumidityValue" Text="- %" HorizontalOptions="End"/>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout AbsoluteLayout.LayoutBounds="0, 1, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional" Spacing="25" Margin="25">
+            <Label FontSize="Medium" x:Name="FlamesFront" Text="Brak danych z"/>
+            <Label FontSize="Medium" x:Name="FlamesBack" Text="sensora płomieni..."/>
+            <Label FontSize="Medium" x:Name="DistanceFront" Text="Brak danych z"/>
+            <Label FontSize="Medium" x:Name="DistanceBack" Text="sensora odległości..."/>
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>
